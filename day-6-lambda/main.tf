@@ -1,7 +1,6 @@
 # 1- S3 Bucket to store Lambda Code
 resource "aws_s3_bucket" "lambda_bucket" {
     bucket = "my-lambda-bucket-unique-name-120599"
-    acl = "private"
     force_destroy = true
 
     tags = {
